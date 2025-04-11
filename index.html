@@ -1,36 +1,173 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favour Fits Fashion</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <title>FavourFits - Home</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
 </head>
+
 <body>
-    <header>
-        <h1>Favour Fits Fashion</h1>
-        <p>Trendy. Affordable. You.</p>
-    </header>
 
-    <section>
-        <h2>Featured Products</h2>
-        <ul>
-            <li>Summer Gown</li>
-            <li>Denim Jacket</li>
-            <li>Classic Handbag</li>
-            <li>Casual Sneakers</li>
-        </ul>
-    </section>
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: hello@favourfits.com</p>
-        <p>Instagram: @favourfits</p>
-    </section>
+  <!-- ***** Header Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <h1>FavourFits</h1>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="collections.html">Collections</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#"><i class="fa fa-shopping-cart"></i> Shop</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header End ***** -->
 
-    <footer>
-        <p>© 2025 Favour Fits Fashion</p>
-    </footer>
+  <!-- ***** Hero Section Start ***** -->
+  <div class="hero-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="banner-text">
+            <h1>Discover Your Style</h1>
+            <p>Explore the latest trends in fashion and redefine your look with us.</p>
+            <a href="collections.html" class="main-button">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Hero Section End ***** -->
+
+  <!-- ***** Featured Products Start ***** -->
+  <div class="featured-products section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="section-heading">
+            <h6>| Featured</h6>
+            <h2>Our Best Picks</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="product-item">
+            <img src="assets/images/product-01.jpg" alt="">
+            <h4>Summer Dress</h4>
+            <p>$49.99</p>
+            <a href="#" class="main-button">View Details</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="product-item">
+            <img src="assets/images/product-02.jpg" alt="">
+            <h4>Classic Blazer</h4>
+            <p>$89.99</p>
+            <a href="#" class="main-button">View Details</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="product-item">
+            <img src="assets/images/product-03.jpg" alt="">
+            <h4>Denim Jacket</h4>
+            <p>$69.99</p>
+            <a href="#" class="main-button">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Featured Products End ***** -->
+
+  <!-- ***** Contact Me Section Start ***** -->
+  <div class="contact-section section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="contact-info">
+            <h4>Contact Me</h4>
+            <p>Need help? Reach out to us anytime!</p>
+            <ul>
+              <li><i class="fa fa-envelope"></i> support@favourfits.com</li>
+              <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/favourfits" target="_blank">@favourfits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <form id="contact-form" action="" method="post">
+            <fieldset>
+              <input type="text" name="name" id="name" placeholder="Your Name" required>
+            </fieldset>
+            <fieldset>
+              <input type="email" name="email" id="email" placeholder="Your Email" required>
+            </fieldset>
+            <fieldset>
+              <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+            </fieldset>
+            <fieldset>
+              <button type="submit" class="main-button">Send Message</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Contact Me Section End ***** -->
+
+  <!-- ***** Footer Start ***** -->
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>@ 2025 FavourFits Fashion. All rights reserved. 
+        Design: <a href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer End ***** -->
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
 </html>
